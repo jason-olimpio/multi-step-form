@@ -6,22 +6,22 @@ export const plans = [
     name: 'Arcade',
     monthlyPrice: 9,
     yearlyPrice: 90,
-    icon: `${baseUrl}images/icon-arcade.svg`,
+    icon: `${baseUrl}images/icon-arcade.svg`
   },
   {
     id: 'advanced',
     name: 'Advanced',
     monthlyPrice: 12,
     yearlyPrice: 120,
-    icon: `${baseUrl}images/icon-advanced.svg`,
+    icon: `${baseUrl}images/icon-advanced.svg`
   },
   {
     id: 'pro',
     name: 'Pro',
     monthlyPrice: 15,
     yearlyPrice: 150,
-    icon: `${baseUrl}images/icon-pro.svg`,
-  },
+    icon: `${baseUrl}images/icon-pro.svg`
+  }
 ]
 
 export const addOns = [
