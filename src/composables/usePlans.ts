@@ -1,24 +1,26 @@
+const baseUrl = import.meta.env.BASE_URL
+
 export const plans = [
   {
     id: 'arcade',
     name: 'Arcade',
     monthlyPrice: 9,
     yearlyPrice: 90,
-    icon: '/images/icon-arcade.svg',
+    icon: `${baseUrl}images/icon-arcade.svg`,
   },
   {
     id: 'advanced',
     name: 'Advanced',
     monthlyPrice: 12,
     yearlyPrice: 120,
-    icon: '/images/icon-advanced.svg',
+    icon: `${baseUrl}images/icon-advanced.svg`,
   },
   {
     id: 'pro',
     name: 'Pro',
     monthlyPrice: 15,
     yearlyPrice: 150,
-    icon: '/images/icon-pro.svg',
+    icon: `${baseUrl}images/icon-pro.svg`,
   },
 ]
 

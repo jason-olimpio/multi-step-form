@@ -17,8 +17,8 @@ const getPrice = (plan: typeof plans[0]) =>
             <div v-for="plan in plans" :key="plan.id"
                 class="card border-2 cursor-pointer transition-all hover:border-primary"
                 :class="formData.plan === plan.id ? 'border-primary' : 'border-base'" @click="formData.plan = plan.id">
-                <div class="card-body p-4">
-                    <img class="w-10 h-10 mb-8":src="plan.icon" />
+                <div class="card-body p-4 flex flex-row items-center gap-6 md:flex-col md:items-start md:gap-10">
+                    <img class="w-10 h-10" :src="plan.icon" />
 
                     <div class="flex flex-col gap-1">
                         <h3 class="font-bold text-md text-primary">{{ plan.name }}</h3>
@@ -26,6 +26,7 @@ const getPrice = (plan: typeof plans[0]) =>
                         <p class="text-primary" v-if="formData.billing === 'yearly'">2 months free</p>
                     </div>
                 </div>
+
             </div>
         </div>
 
